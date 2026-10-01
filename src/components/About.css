@@ -1,0 +1,98 @@
+.about {
+  padding: 6rem 0;
+}
+
+.about-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin-bottom: 1.5rem;
+}
+.about-title em {
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.about-text {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 38rem;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 4rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.fact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+}
+.fact + .fact {
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--border);
+}
+
+.fact-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.fact-value {
+  font-size: 1rem;
+}
+
+@media (max-width: 639px) {
+  .facts {
+    grid-template-columns: 1fr;
+  }
+  .fact + .fact {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--border);
+  }
+}
+.chips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.skills {
+  padding: 4rem 0 6rem;
+  border-top: 1px solid var(--border);
+}
+
+.chip {
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+.about .col-lg-5 .section-label {
+  margin-bottom: 1rem;
+}
+.chip:hover {
+  color: var(--ink);
+  border-color: var(--muted);
+}
