@@ -16,7 +16,7 @@ const Hero = function () {
 
           <div className="col-lg-5">
             <div className="hero-frame">
-              <img src="/public/Logo-removebg.png" alt="Ezzat Eldeeb" />
+              <img src="/Logo-removebg.png" alt="Ezzat Eldeeb" />
             </div>
           </div>
         </div>

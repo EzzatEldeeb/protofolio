@@ -18,7 +18,7 @@ export default function NavBar() {
       <div className="container-xxl px-3 px-md-5">
         <a className="navbar-brand logo-slot" href="#hero" aria-label="Home">
           <img
-            src="/public/MiniLogo-removeBG.png"
+            src="/MiniLogo-removeBG.png"
             alt=""
             className="logo-img"
             width="567"
